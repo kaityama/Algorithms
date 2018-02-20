@@ -1,0 +1,70 @@
+/**
+Dijkstra's algorithm to find the shortest paths between all nodes in the graph. At the end of
+the call, the fields in T[][] are updated to hold information on the
+shortest paths found.
+*/
+void GraphM::findShortestPath()
+{
+	// set T nodes to visited, distance and path to 0
+	initializeT();
+
+	// iterates through each node as a source, to find shortest paths from each
+	for (int source = 1; source <= size; source++)
+	{
+		// finds the shortest distances
+		T[source][source].dist = 0;	// change this source weight to 0
+		int vIndex = source;	// save the index of V for later use
+		int verticesVisited = 0;	// initialize vertices visited count
+
+		// exits when all vertices are visited
+		while (verticesVisited <= size)
+		{
+			T[source][vIndex].visited = true;	// mark V as visited
+			++verticesVisited;	// update vertices visited count
+
+			// use C[][] to find adjacent paths from source, and save in T[][]
+			for (int w = 1; w <= size; w++)
+			{
+				// if adjacent to source && vertex not visited
+				if (C[vIndex][w] < INT_MAX && !(T[source][w].visited))
+				{
+					// add weight from previous calculation + current edge's weight
+					int newWeight = T[source][vIndex].dist + C[vIndex][w];	
+					// if new calculated weight is less than the min weight that is saved (shorter path)
+					if (newWeight < T[source][w].dist)
+					{
+						T[source][w].dist = newWeight;	// set distance to new weight
+						T[source][w].path = vIndex;		// set path to previous vertex
+					}
+				}
+			}
+
+			int minWeight = INT_MAX;	// initialize min weight to infinity
+			int minIndex = INT_MAX;	// initialize min index to infinity
+			bool entered = false;	// initialize entered as false
+
+			// find smallest weight saved in T[][] of vertex that is not yet visited (next one to process)
+			for (int w = 1; w <= size; w++)
+			{	
+				// if satisfies the conditions
+				if (!(T[source][w].visited) && T[source][w].dist < minWeight)
+				{
+					minWeight = T[source][w].dist;	// update new min weight
+					minIndex = w;	// update new min index
+					entered = true;	// we have entered this statement, so set to true
+				}
+			}
+
+			if (entered)	// minimum has been updated, so update index to new final min index
+			{
+				vIndex = minIndex;
+			}
+			// min has not been updated, so all nodes must be visited 
+			// OR remaining unvisited nodes have no path from this source
+			else
+			{
+				vIndex = 0;	// set to 0 as extra precaution
+			}
+		}
+	}
+}

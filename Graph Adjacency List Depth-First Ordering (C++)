@@ -1,0 +1,48 @@
+/**
+Acts as wrapper function for depth first search algorithm. Displays nodes visited in depth first order.
+*/
+void GraphL::depthFirstSearch()
+{
+	cout << "Depth-first ordering: ";	// print heading
+
+	// mark all not visited
+	for (int i = 1; i <= size; i++)
+	{
+		data[i]->visited = false;
+	}
+
+	//for each V in graph, reaches every node in graph
+	for (int v = 1; v <= size; v++)
+	{
+		//if V is not visited, perform DFS private method
+		if (!(data[v]->visited))
+		{
+			dfs(v);
+		}
+	}
+}
+
+/**
+Private recursive dfs method that performs depth first search for the vertex provided.
+
+@param  an int, vertex that is being searched.
+*/
+void GraphL::dfs(int v)
+{
+	// mark v as visited
+	data[v]->visited = true;
+	// do whatever with v (print v)
+	cout << v << " ";
+	// for each w adjacent to v
+	EdgeNode * itr = data[v]->edgeHead;	// points iterator at head of edges
+	while (itr != NULL)	// exits once all edges have been processed
+	{
+		int w = itr->adjGraphNode;	// gets w, adjacent to v
+		// if w not visited
+		if (!(data[w]->visited))
+		{
+			dfs(w);	// perform DFS on w
+		}
+		itr = itr->nextEdge;	// update iterator to next edge
+	}
+}
