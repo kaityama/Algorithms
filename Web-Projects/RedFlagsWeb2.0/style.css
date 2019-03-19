@@ -1,0 +1,153 @@
+header {
+    background-color: #ffffff;
+    height: 80px;
+}
+
+body {
+    position: relative;
+}
+
+ul.nav-pills {
+    top: 100px;
+    position: fixed;
+    font-size: 16px;
+}
+
+div.col-sm-9 div {
+    font-family: Tahoma; 
+    min-height: 100px;
+}
+
+h1 {
+    font-family: "Trebuchet MS"; 
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    line-height: 55px;
+    border-style: hidden hidden solid hidden;
+}
+
+h2 {
+    font-family: "Trebuchet MS"; 
+    font-size: 24px;
+    letter-spacing: -1px;
+    padding-left: 10px;
+    border-style: hidden hidden hidden solid;
+    border-width: 0px 0px 0px 10px;
+    border-color: #84ffff;
+}
+
+h3 {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 16px;
+}
+
+#section1 h1 {
+    color: #64dd17;
+}
+
+#section1 {
+    color: #fff; 
+    background-color: #263238;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 5px;
+}
+
+#section2 h1 {
+    color: #aa00ff;
+}
+#section2 {
+    color: #fff; 
+    background-color: #263238;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 5px;
+}
+
+#section3 h1 {
+    color: #64dd17;
+}
+#section3 {
+    color: #fff; 
+    background-color: #263238;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 5px;
+}
+
+#section4 h1 {
+    color: #aa00ff;
+}
+#section4 {
+    color: #fff; 
+    background-color: #263238;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 5px;
+}
+
+#section5 h1 {
+    color: #64dd17;
+}
+#section5 {
+    color: #fff; 
+    background-color: #263238;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 5px;
+}
+
+#section6 h1 {
+    color: #aa00ff;
+}
+#section6 {
+    color: #fff; 
+    background-color: #263238;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 5px;
+}
+
+
+@media screen and (max-width: 810px) {
+    #section1, #section2, #section3, #section4, #section5, #section6  {
+        margin-left: 150px;
+    }
+}
+ 
+main {
+    margin-top: 80px;
+}
+
+footer {
+    background-color: #ffffff;
+}
+
+.btn, .btn-primary {
+    margin: 10px;
+}
+
+.btn-primary.active, .btn-primary:active,
+.btn-primary.hover, .btn-primary:hover,
+.btn-primary.active.focus, .btn-primary.active:focus,
+.btn-primary:active.focus, .btn-primary:active:focus {
+    background-color: #33cc33;
+    border-color: #4cae4c;
+}

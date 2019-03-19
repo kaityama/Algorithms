@@ -1,0 +1,5 @@
+::1 - - [01/Feb/2018:14:56:24 -0800] "GET /kaitlyn/index.php HTTP/1.1" 200 93864 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36"
+::1 - - [01/Feb/2018:14:56:25 -0800] "GET /favicon.ico HTTP/1.1" 200 30894 "http://localhost/kaitlyn/index.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36"
+::1 - - [01/Feb/2018:14:57:50 -0800] "GET /kaitlyn/index.php HTTP/1.1" 200 14 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36"
+::1 - - [01/Feb/2018:14:57:50 -0800] "GET /favicon.ico HTTP/1.1" 404 1209 "http://localhost/kaitlyn/index.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36"
+::1 - - [01/Feb/2018:14:59:57 -0800] "GET /kaitlyn/index.php HTTP/1.1" 200 227 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36"

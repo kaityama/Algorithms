@@ -1,0 +1,21 @@
+2:55:14 PM  [main] 	Initializing Control Panel
+2:55:14 PM  [main] 	Windows Version:  Home  64-bit
+2:55:14 PM  [main] 	XAMPP Version: 7.2.1
+2:55:14 PM  [main] 	Control Panel Version: 3.2.2  [ Compiled: Nov 12th 2015 ]
+2:55:14 PM  [main] 	You are not running with administrator rights! This will work for
+2:55:14 PM  [main] 	most application stuff but whenever you do something with services
+2:55:14 PM  [main] 	there will be a security dialogue or things will break! So think 
+2:55:14 PM  [main] 	about running this application with administrator rights!
+2:55:14 PM  [main] 	XAMPP Installation Directory: "c:\users\kaity\desktop\xampp\"
+2:55:14 PM  [main] 	Checking for prerequisites
+2:55:15 PM  [main] 	All prerequisites found
+2:55:15 PM  [main] 	Initializing Modules
+2:55:15 PM  [main] 	The FileZilla module is disabled
+2:55:15 PM  [main] 	The Mercury module is disabled
+2:55:15 PM  [main] 	Starting Check-Timer
+2:55:15 PM  [main] 	Control Panel Ready
+2:55:42 PM  [Apache] 	Attempting to start Apache app...
+2:55:42 PM  [Apache] 	Status change detected: running
+11:58:21 PM  [main] 	Deinitializing Modules
+11:58:21 PM  [main] 	Deinitializing Control Panel
+
